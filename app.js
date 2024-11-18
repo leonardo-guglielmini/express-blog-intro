@@ -5,10 +5,10 @@ const app = express();
 const port = 3000;
 
 const postCounter = post.length;
-console.log(post);
-console.log(postCounter);
+//console.log(post);
+//console.log(postCounter);
 
-app.use(express.static("img"));
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
     res.send("Server del mio blog");

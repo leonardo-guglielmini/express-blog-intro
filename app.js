@@ -8,6 +8,8 @@ const postCounter = post.length;
 console.log(post);
 console.log(postCounter);
 
+app.use(express.static("img"));
+
 app.get("/", (req, res) => {
     res.send("Server del mio blog");
 })
